@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+    @apply text-white font-semibold text-base px-5 py-2 mx-2 rounded-md;
+}
+
+.btn_primary {
+    @apply bg-orange-600;
+}
+.btn_secondary {
+    @apply bg-gray-700;
+}

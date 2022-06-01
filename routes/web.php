@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\backend\DashboardController;
+use App\Http\Controllers\backend\CashInController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
@@ -33,6 +34,13 @@ Route::get('/clear', function () {
 
 Route::prefix('dashboard')->middleware('auth')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard.index');
+
+    // Cash in
+    Route::get('/cash-ins', [CashInController::class, 'index'])->name('cashin.index');
+    Route::delete('/cash-ins/delete/{id}', [CashInController::class, 'delete'])->name('cashin.delete');
+
+
+
 });
 
 

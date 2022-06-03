@@ -19,7 +19,7 @@ return new class extends Migration
             $table->foreignId('loan_id');
             $table->string('address', 255);
             $table->string('nid', 255);
-            $table->enum('business_category', ['A','B']);
+            $table->string('business_category',255);
             $table->timestamps();
         });
     }

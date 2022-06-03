@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\backend\DashboardController;
 use App\Http\Controllers\backend\CashInController;
+use App\Http\Controllers\backend\LoanController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
@@ -39,6 +40,8 @@ Route::prefix('dashboard')->middleware('auth')->group(function () {
     Route::get('/cash-ins', [CashInController::class, 'index'])->name('cashin.index');
     Route::delete('/cash-ins/delete/{id}', [CashInController::class, 'delete'])->name('cashin.delete');
 
+    // Loan
+    Route::resource('loan', LoanController::class);
 
 
 });

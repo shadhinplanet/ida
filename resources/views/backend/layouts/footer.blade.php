@@ -11,26 +11,26 @@
                 $("#headerDropdown").slideToggle(400);
             });
 
-            $("#clientName").hide();
-            $("#clientSelect").hide();
+            // $("#clientName").hide();
+            // $("#clientSelect").hide();
 
-            $("#newClient").on("click", function() {
-                $("#memberInput").hide();
-                $("#businessTypeArea").hide();
-                $("#clientName").show();
-            });
+            // $("#newClient").on("click", function() {
+            //     $("#memberInput").hide();
+            //     $("#businessTypeArea").hide();
+            //     $("#clientName").show();
+            // });
 
-            $("#oldClient").on("click", function() {
-                $("#memberInput").hide();
-                $("#businessTypeArea").hide();
-                $("#clientName").show();
-            });
+            // $("#oldClient").on("click", function() {
+            //     $("#memberInput").hide();
+            //     $("#businessTypeArea").hide();
+            //     $("#clientName").show();
+            // });
 
-            $("#member").on("click", function() {
-                $("#memberInput").show();
-                $("#businessTypeArea").show();
-                $("#clientName").hide();
-            });
+            // $("#member").on("click", function() {
+            //     $("#memberInput").show();
+            //     $("#businessTypeArea").show();
+            //     $("#clientName").hide();
+            // });
 
             $("#formClear").click(function() {
                 $("#memberForm:not('#clientType')").trigger("reset");

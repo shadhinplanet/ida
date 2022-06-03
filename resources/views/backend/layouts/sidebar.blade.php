@@ -36,7 +36,7 @@
                 Cash In
             </a>
 
-            <a href="#" class="flex items-center my-1 pl-4 py-3 border-1-4 hover:bg-sky-900 hover:text-white">
+            <a href="{{ route('loan.index') }}" class="flex items-center my-1 pl-4 py-3  {{ request()->routeIs('loan.*') ? 'text-white bg-sky-900 border-sky-900' : 'text-sky-900 hover:bg-sky-900 hover:text-white'}}">
                 <svg class="w-5 mr-2" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M13.6114 4.27732C13.6114 2.5333 12.1935 1.11432 10.4506 1.11432C8.707 1.11432 7.28802 2.5333 7.28802 4.27732C7.28802 6.02024 8.7066 7.43892 10.4506 7.43892C12.1935 7.43882 13.6114 6.01984 13.6114 4.27732ZM10.4505 6.93422C8.98398 6.93422 7.79243 5.74236 7.79243 4.27692C7.79243 2.81108 8.98398 1.61852 10.4505 1.61852C11.9164 1.61852 13.1082 2.81108 13.1082 4.27692C13.1079 5.74276 11.916 6.93422 10.4505 6.93422Z"
